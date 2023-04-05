@@ -1,0 +1,171 @@
+.box-service {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-service i {
+  width: 50%;
+  font-size: 75px;
+  text-align: center;
+  padding: 10px 0px;
+}
+.box-service h4 {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+}
+
+.container-services {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+}
+
+.fa-location-dot:hover {
+  color: rgb(249, 142, 3);
+  transform: 1s;
+  cursor: pointer;
+}
+
+.fa-whatsapp:hover {
+  color: rgb(1, 255, 86);
+  transform: 1s;
+  cursor: pointer;
+}
+
+.fa-phone:hover {
+  color: rgb(17, 0, 255);
+  transform: 1s;
+  cursor: pointer;
+}
+
+.fa-envelope:hover {
+  color: rgb(251, 6, 6);
+  transform: 1s;
+  cursor: pointer;
+}
+
+.contactos-box {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 50px 30px;
+}
+
+.formulario {
+  padding: 10px;
+  width: 60%;
+}
+
+.formulario h4 {
+  padding: 10px 0px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.formulario label {
+  font-weight: 700;
+}
+
+.formulario input,
+textarea {
+  background-color: #ffff;
+  border: 1px solid #000;
+  width: 100%;
+  border-radius: 25px;
+  margin: 15px 0px;
+  padding: 3%;
+  color: #000;
+  font-weight: 900;
+}
+
+.mapa-box {
+  width: 50%;
+}
+
+.formulario input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid rgb(18, 13, 96);
+  box-shadow: 0px 0px 8px rgb(21, 12, 147);
+}
+
+.btn-form {
+  background-color: rgb(21, 12, 225);
+  color: #ffff;
+  font-weight: bolder;
+  padding: 3% 5%;
+  border: 1px solid rgb(18, 13, 96);
+  border-radius: 25px;
+}
+
+.btn-form:hover {
+  background-color: rgb(77, 67, 228);
+  transform: 1s;
+  cursor: pointer;
+}
+
+iframe {
+  width: 800px;
+  height: 550px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container-services {
+    grid-template-columns: auto auto;
+    gap: 50px 20px;
+  }
+  .contactos-box {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0 30px;
+  }
+  .mapa-box {
+    width: 100%;
+    height: 500px;
+  }
+  iframe {
+    width: 100%;
+    height: 500px;
+    margin: 0px 10px 10px 0px;
+  }
+  .formulario {
+    padding: 10px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .container-services {
+    grid-template-columns: auto;
+    gap: 50px 0px;
+  }
+  .contactos-box {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0 30px;
+  }
+  .box-service i {
+    font-size: 50px;
+  }
+  .mapa-box {
+    width: 100%;
+    height: 300px;
+  }
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+  textarea {
+    width: 250px;
+    height: 200px;
+  }
+
+  .formulario {
+    padding: 10px;
+    width: 90%;
+  }
+}

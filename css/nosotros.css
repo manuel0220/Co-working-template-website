@@ -1,0 +1,38 @@
+.team{
+    background: #3795BD;
+}
+
+.team .main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.team h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.team h4{
+    font-size: 20px;
+}
+
+.team p{
+    width: 200px;
+}
+
+@media only screen and (max-width: 550px) {
+    .team .main{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px 0;
+    }
+}
